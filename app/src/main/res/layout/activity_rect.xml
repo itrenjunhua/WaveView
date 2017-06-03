@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:renj="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="12dp"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.waveview.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <com.waveview.view.WaveView
+            android:id="@+id/waveview1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <com.waveview.view.WaveView
+            android:id="@+id/waveview2"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            renj:borderColor="#00ff00"
+            renj:borderWidth="2dp"
+            renj:intervalTime="3"
+            renj:precent="0.4"
+            renj:showShape="rect"
+            renj:textColor="#0000ff"
+            renj:textSize="18sp"
+            renj:wave1Color="#ff0000"
+            renj:wave1Height="32"
+            renj:wave1Length="280"
+            renj:wave2Color="#80ff0000"
+            renj:wave2Height="30"
+            renj:wave2Length="250"/>
+
+        <com.waveview.view.WaveView
+            android:id="@+id/waveview3"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="20dp"
+            renj:borderWidth="0dp"
+            renj:intervalTime="3"
+            renj:precent="0.5"
+            renj:textColor="#0000ff"
+            renj:textSize="18sp"
+            renj:wave1Color="#ff0000"
+            renj:wave1Height="25"
+            renj:wave1Length="200"
+            renj:wave1Offset="5"
+            renj:wave2Color="#80ff0000"
+            renj:wave2Height="22"
+            renj:wave2Length="150"
+            renj:wave2Offset="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始"/>
+
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"/>
+
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置"/>
+    </LinearLayout>
+</LinearLayout>

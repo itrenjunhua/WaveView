@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:renj="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="12dp"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_precent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <com.waveview.view.WaveView
+        android:id="@+id/waveview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        renj:borderColor="#00ff00"
+        renj:borderWidth="2dp"
+        renj:intervalTime="3"
+        renj:precent="0.6"
+        renj:showShape="circle"
+        renj:textColor="#0000ff"
+        renj:textSize="18sp"
+        renj:wave1Color="#ff0000"
+        renj:wave2Color="#80ff0000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开始"/>
+
+        <Button
+            android:id="@+id/bt_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="暂停"/>
+
+        <Button
+            android:id="@+id/bt_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="重置"/>
+    </LinearLayout>
+</LinearLayout>
