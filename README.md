@@ -1,6 +1,9 @@
 # WaveView Android自定义水波纹百分比效果控件
 Android 自定义控件实现动态百分比水波纹效果，支持修改波纹长度、波峰高度、颜色、是否需要边框、边框的颜色、大小、可以控制波纹的移动速度，支持矩形和圆形两种效果。所有属性可以通过布局文件设置，也可以在代码中设置。
 
+## 效果图展示
+![Android水波纹圆形效果](https://github.com/itrenjunhua/WaveView/blob/master/images/circle.gif)             ![Android水波纹矩形效果](https://github.com/itrenjunhua/WaveView/blob/master/images/react.gif)
+
 ## 自定义属性字段展示
 	<!--自定义水波纹效果属性-->  
     <declare-styleable name="WaveView">  
@@ -87,6 +90,3 @@ Android 自定义控件实现动态百分比水波纹效果，支持修改波纹
         }); 
 
 CSDN博客查看相关内容 [点击这里](http://blog.csdn.net/itrenj/article/details/53874219 "查看CSDN博客")
-
-## 效果图展示
-![Android水波纹圆形效果](https://github.com/itrenjunhua/WaveView/blob/master/images/circle.gif)             ![Android水波纹矩形效果](https://github.com/itrenjunhua/WaveView/blob/master/images/react.gif)
